@@ -49,7 +49,7 @@
 }
 
 .btn-small:hover {
-  background-color: #26c0ab;
+  background-color: #9fe8e1;
   color: #00494d;
 }
 
@@ -58,6 +58,10 @@
   width: 100%;
   color: #00494d;
   background-color: #26c0ab;
+}
+
+.btn-big:hover {
+  background-color: #9fe8e1;
 }
 
 .text {
@@ -75,6 +79,22 @@
 
 .text-small {
   font-size: 0.6rem;
+}
+
+.text-error {
+  color: #c9312e;
+}
+
+.text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .result {
@@ -99,12 +119,22 @@ input:focus {
   text-align: right;
   color: #00494d;
   margin-top: 5px;
-  border: 1px solid #c5e4e7;
+  border: 1px solid #9fe8e1;
+}
+
+.input-text.default {
+  -webkit-box-shadow: 0px;
+          box-shadow: 0px;
 }
 
 .input-text:focus {
   -webkit-box-shadow: 0px 0px 3px 2pt #26c0ab;
           box-shadow: 0px 0px 3px 2pt #26c0ab;
+}
+
+.input-text.error {
+  -webkit-box-shadow: 0px 0px 3px 2pt #c9312e;
+          box-shadow: 0px 0px 3px 2pt #c9312e;
 }
 
 .input-text::-webkit-outer-spin-button, .input-text::-webkit-inner-spin-button {
@@ -124,7 +154,7 @@ input:focus {
   font-weight: 700;
   margin-bottom: 15px;
   text-align: center;
-  border: 1px solid #c5e4e7;
+  border: 1px solid #9fe8e1;
 }
 
 .input-btn:focus {
@@ -139,6 +169,7 @@ svg {
   z-index: 1;
   bottom: 15px;
   left: 18px;
+  pointer-events: none;
 }
 
 path {
@@ -146,7 +177,7 @@ path {
 }
 
 body {
-  background-color: #c5e4e7;
+  background-color: #9fe8e1;
   margin-top: 40px;
 }
 
@@ -205,5 +236,51 @@ body {
 .component-container {
   margin-bottom: 25px;
   position: relative;
+}
+
+@media (min-width: 1280px) {
+  .logo {
+    font-size: 0.8rem;
+    letter-spacing: 0.5rem;
+  }
+  .app-background {
+    width: 70%;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 100px;
+    border-radius: 30px;
+  }
+  .app-background__green {
+    width: 50%;
+    padding: 50px 40px;
+  }
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-width: 1110px;
+  }
+  .container-buttons {
+    -ms-grid-columns: (31.2%)[3];
+        grid-template-columns: repeat(3, 31.2%);
+  }
+  .container-left {
+    width: 46%;
+  }
+  .container-tips {
+    margin: 40px 0px;
+  }
+  .result {
+    font-size: 40px;
+  }
+  .input-text {
+    width: 100%;
+  }
+  .btn-big {
+    top: 120px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
