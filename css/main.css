@@ -42,15 +42,26 @@
   cursor: pointer;
 }
 
+.btn-small {
+  color: white;
+  background-color: #00494d;
+  margin-bottom: 15px;
+}
+
+.btn-small:hover {
+  background-color: #9fe8e1;
+  color: #00494d;
+}
+
 .btn-big {
   position: relative;
   width: 100%;
-  color: white;
-  background-color: #efb541;
+  color: #00494d;
+  background-color: #26c0ab;
 }
 
 .btn-big:hover {
-  background-color: #7d3210;
+  background-color: #9fe8e1;
 }
 
 .text {
@@ -58,7 +69,7 @@
 }
 
 .text-whiteBg {
-  color: #001858;
+  color: #5e7a7d;
   font-weight: 700;
 }
 
@@ -87,9 +98,9 @@
 }
 
 .result {
-  color: #001858;
+  color: #26c0ab;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 30px;
 }
 
 input:focus {
@@ -100,15 +111,15 @@ input:focus {
 
 .input-text {
   position: relative;
-  background-color: white;
+  background-color: #f4fafa;
   border-radius: 6px;
   padding: 6px 20px;
   max-width: 100%;
   font-weight: 700;
   text-align: right;
-  color: #7d3210;
+  color: #00494d;
   margin-top: 5px;
-  border: 1px solid #6fa1d0;
+  border: 1px solid #9fe8e1;
 }
 
 .input-text.default {
@@ -117,8 +128,8 @@ input:focus {
 }
 
 .input-text:focus {
-  -webkit-box-shadow: 0px 0px 3px 2pt #efb541;
-          box-shadow: 0px 0px 3px 2pt #efb541;
+  -webkit-box-shadow: 0px 0px 3px 2pt #26c0ab;
+          box-shadow: 0px 0px 3px 2pt #26c0ab;
 }
 
 .input-text.error {
@@ -135,6 +146,22 @@ input:focus {
   -moz-appearance: textfield;
 }
 
+.input-btn {
+  padding: 6px 15px;
+  background-color: #f4fafa;
+  border-radius: 6px;
+  color: #00494d;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-align: center;
+  border: 1px solid #9fe8e1;
+}
+
+.input-btn:focus {
+  -webkit-box-shadow: 0px 0px 3px 2pt #26c0ab;
+          box-shadow: 0px 0px 3px 2pt #26c0ab;
+}
+
 svg {
   height: 20px;
   width: 20px;
@@ -146,11 +173,11 @@ svg {
 }
 
 path {
-  fill: #7d3210;
+  fill: #7f9c9f;
 }
 
 body {
-  background-color: #6fa1d0;
+  background-color: #9fe8e1;
   margin-top: 40px;
 }
 
@@ -158,18 +185,18 @@ body {
   text-align: center;
   font-size: 1.1rem;
   letter-spacing: 0.6rem;
-  color: #001858;
+  color: #00494d;
 }
 
 .app-background {
   background-color: white;
   margin-top: 30px;
-  border-radius: 30px 30px;
+  border-radius: 30px 30px 0px 0px;
   padding: 40px 30px;
 }
 
 .app-background__green {
-  background-color: #6fa1d0;
+  background-color: #00494d;
   padding: 30px 20px;
   border-radius: 10px;
   opacity: 0;
@@ -253,7 +280,7 @@ body {
     width: 100%;
   }
   .btn-big {
-    top: 20px;
+    top: 120px;
   }
 }
 /*# sourceMappingURL=main.css.map */
