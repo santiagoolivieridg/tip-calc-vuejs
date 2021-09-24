@@ -125,8 +125,8 @@
             if (
               this.bill != 0 &&
               this.people != 0 &&
-              this.bill != NaN &&
-              this.people != NaN
+              !isNaN(this.bill) &&
+              !isNaN(this.people)
             ) {
               // divide entre las personas
               const billPerPerson = this.bill / this.people;
